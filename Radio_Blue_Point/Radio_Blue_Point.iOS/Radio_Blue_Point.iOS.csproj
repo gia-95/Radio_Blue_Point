@@ -142,4 +142,25 @@
       <Name>Radio_Blue_Point</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SfondoApp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sfondo_flyR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icona_utente_cuore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icona_radio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icona_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fly_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icona_logout.png" />
+  </ItemGroup>
 </Project>

@@ -4,7 +4,7 @@
              x:Class="Radio_Blue_Point.Views.AboutPage"
              xmlns:vm="clr-namespace:Radio_Blue_Point.ViewModels"
              Title="{Binding Title}"
-             BackgroundColor="Black">
+             BackgroundImageSource="SfondoApp.jpg">
     
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
@@ -15,6 +15,7 @@
             <Color x:Key="Accent">#96d1ff</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
+    
 
     <Grid>
         <Grid.RowDefinitions>
