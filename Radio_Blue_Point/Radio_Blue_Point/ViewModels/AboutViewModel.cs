@@ -9,10 +9,13 @@ namespace Radio_Blue_Point.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            Title = "Radio Streaming";
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("http://nrf1.newradio.it:10090/stream"));
+            nuovoComando = new Command(async () => await Browser.OpenAsync("https://radio-blue-point.jimdosite.com/"));
         }
 
         public ICommand OpenWebCommand { get; }
+
+        public ICommand nuovoComando { get; }
     }
 }
