@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>vivo V2023</SelectedDevice>
     <ActiveDebugProfile>vivo V2023</ActiveDebugProfile>
+    <DefaultDevice>nexus_4_pie_9_0_-_api_28</DefaultDevice>
   </PropertyGroup>
 </Project>
