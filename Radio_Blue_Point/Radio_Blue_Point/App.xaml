@@ -27,6 +27,12 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
+
+            <OnPlatform x:TypeArguments="x:String" x:Key="Lobster">
+                <On Platform="Android" Value="Lobster-Regular.ttf#Open Sans" />
+                <On Platform="UWP" Value="/Assets/Lobster-Regular.ttf#Open Sans" />
+                <On Platform="iOS" Value="Lobster-Regular" />
+            </OnPlatform>
         </ResourceDictionary>        
     </Application.Resources>
 </Application>
