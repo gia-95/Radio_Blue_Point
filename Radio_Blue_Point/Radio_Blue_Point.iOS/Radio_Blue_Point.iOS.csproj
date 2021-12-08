@@ -165,9 +165,15 @@
     <BundleResource Include="Resources\icona_logout.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\sfondo_app.jpg" />
+    <BundleResource Include="Resources\bluepoint.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\bluepoint.png" />
+    <BundleResource Include="Resources\dsodm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lampadina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\play.png" />
   </ItemGroup>
 </Project>

@@ -16,5 +16,6 @@ namespace Radio_Blue_Point.Views
         {
             InitializeComponent();
         }
+
     }
 }

@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Radio_Blue_Point.Views"
              xmlns:vm ="clr-namespace:Radio_Blue_Point.ViewModels"
              x:Class="Radio_Blue_Point.Views.StreamingPage"
-             BackgroundImageSource="sfondo_app.jpg"
+             BackgroundImageSource="dsodm.jpg"
              Opacity="0.8"
              Title="Streaming">
 
@@ -12,63 +12,96 @@
         <vm:StreamingPageViewModel/>
     </ContentPage.BindingContext>
 
+    <ScrollView>
+
         <StackLayout>
-              <Label  Text="Radio"  Margin="20,20,0,-30" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="StartAndExpand" CharacterSpacing="2" />
-             <Label Text="Blue" Margin="0,0,0,-30" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="Center" CharacterSpacing="2"/>
-             <Label Text="Point"  Margin="0,0,30,0" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="EndAndExpand" CharacterSpacing="2"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Frame BackgroundColor="Transparent" BorderColor="Blue" CornerRadius="50" HeightRequest="55" Margin="10,30,0,0" Padding="0">
+                <Label Text="Radio Blue Point"  Margin="20,8,20,0" FontFamily="{StaticResource Lobster}" FontSize="30" TextColor="White" HorizontalOptions="StartAndExpand" CharacterSpacing="2"/>
+            </Frame>
+            <Image Source="bluepoint.png"  HeightRequest="50" Margin="0,30,0,0"/>
+        </StackLayout>
 
 
+        <StackLayout Orientation="Horizontal" 
+                     Margin="0,350,0,0">
+            <Frame  HeightRequest="80"
+                    CornerRadius="100"
+                    Padding="0"
+                    BackgroundColor="Black">
+                <Image Source="play.png" Aspect="AspectFill" />
+            </Frame>
+                <StackLayout>
+                    <Frame Padding="0" 
+                       WidthRequest="50"
+                       HeightRequest="35"
+                       CornerRadius="1"
+                       Margin="0,0,150,0">
+                        <Button Text="ON AIR" FontSize="20" FontAttributes="Italic" TextColor="White" BackgroundColor="Red" Margin="-10" Command="{Binding PlayCommand}" />
+                    </Frame>
+                    <Frame Padding="0" Margin="0,0,0,0" BackgroundColor="Transparent">
+                        <Label Text="- PROGRAMMA IN ONDA-" TextColor="White" FontSize="24" Margin="0" FontAttributes="Bold"/>
+                    </Frame>
+                    <Frame Padding="0" Margin="35,0,0,0" BackgroundColor="Transparent">
+                        <Label Text="con Mario Mario" TextColor="White" FontSize="15" Margin="-2" FontAttributes="Italic"/>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
 
+            <Label Text="Scorri per gli utlimi brani trasmessi:" FontSize="20" Margin="10,100,0,-10" TextColor="White" />
 
-        <CarouselView ItemsSource="{Binding program}" 
-                          VerticalOptions="EndAndExpand" 
-                          HeightRequest="300"
-                          PeekAreaInsets="100">
+            <CarouselView ItemsSource="{Binding program}" 
+                           HeightRequest="200"
+                           PeekAreaInsets="100">
             <CarouselView.ItemsLayout >
                 <LinearItemsLayout Orientation="Horizontal" ItemSpacing="0" />
             </CarouselView.ItemsLayout>
-
-
             <CarouselView.ItemTemplate>
                    <DataTemplate>
 
                          <StackLayout>
-                             
-                             <Frame HeightRequest="250" WidthRequest="170" Margin="20" Padding="0"
-                                      CornerRadius="20" HasShadow="True"
+
+                            <Frame HeightRequest="200" WidthRequest="120" Margin="20" Padding="0"
+                                      CornerRadius="20" HasShadow="True" 
                                       VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand"
                                        BackgroundColor="White">
-                                  <Grid>
-                                      <StackLayout BackgroundColor="Black">
-                                            <Image Source="{Binding imgProgram}" 
+                                <Grid>
+                                    <StackLayout BackgroundColor="Black">
+                                        <Image Source="{Binding imgProgram}" 
                                                Aspect="AspectFill"
-                                                  HeightRequest="250"
+                                                  HeightRequest="170"
                                                   Opacity="0.7"/>
-                                      </StackLayout>
-                                      <StackLayout>
-                                             <StackLayout Orientation="Horizontal"
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <StackLayout Orientation="Horizontal"
                                                        VerticalOptions="EndAndExpand"
                                                        Margin="10">
-                                                      <Label Text="{Binding orario}" TextColor="White"  FontSize="10"/>
-                                                      <Image Source="bluepoint.png" WidthRequest="15" />
-                                             </StackLayout>
-                                             <Label Text="{Binding nomeProgramma}"
+                                            <Label Text="{Binding orario}" TextColor="White"  FontSize="10"/>
+                                            <Image Source="lampadina.png" WidthRequest="10" />
+                                        </StackLayout>
+                                        <Label Text="{Binding nomeProgramma}"
                                                   Margin="10,-12,0,30"
                                                   TextColor="White" FontSize="15" FontAttributes="Bold" />
-                                      </StackLayout>
-                                  </Grid>
-                             </Frame>
-                             
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
                         </StackLayout>
                          
                      </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
 
+            <Label Text="Oppure visita il nostro sito:" TextColor="White" HorizontalOptions="CenterAndExpand" Margin="0,100,0,0" />
+            <Label Text="https://radio-blue-point.jimdosite.com/" HorizontalOptions="CenterAndExpand" TextColor="White" 
+                   CharacterSpacing="1" 
+                   FontSize="18" 
+                   TextDecorations="Underline" 
+                   TextType="Html" />
+            <Button BackgroundColor="Transparent" Margin="0,-50,0,0" Command="{Binding SiteCommand}" />
 
 
         </StackLayout>
-    
- 
-    
+    </ScrollView>
+
 </ContentPage>
