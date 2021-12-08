@@ -5,8 +5,7 @@
              xmlns:vm ="clr-namespace:Radio_Blue_Point.ViewModels"
              x:Class="Radio_Blue_Point.Views.StreamingPage"
              BackgroundImageSource="dsodm.jpg"
-             Opacity="0.8"
-             Title="Streaming">
+             Opacity="1">
 
     <ContentPage.BindingContext>
         <vm:StreamingPageViewModel/>

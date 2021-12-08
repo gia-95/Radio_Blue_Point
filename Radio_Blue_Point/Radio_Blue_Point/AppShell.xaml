@@ -16,7 +16,7 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.BackgroundColor" Value="Black" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
@@ -80,17 +80,15 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
+
     <FlyoutItem Title="Home" Icon="icona_home.png" >
-        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent  ContentTemplate="{DataTemplate local:StreamingPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Cerca il tuo artista preferito" Icon="icona_utente_cuore.png">
         <ShellContent  ContentTemplate="{DataTemplate local:SearchPage}" Icon="icona_utente_cuore.png" />
     </FlyoutItem>
     <FlyoutItem Title="Storia della radio" Icon="icona_radio.png">
         <ShellContent  ContentTemplate="{DataTemplate local:HistoryPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Streaming" >
-     <ShellContent  ContentTemplate="{DataTemplate local:StreamingPage}" />
     </FlyoutItem>
 
     <!--
