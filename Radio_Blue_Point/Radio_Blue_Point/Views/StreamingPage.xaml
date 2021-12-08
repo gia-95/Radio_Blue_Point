@@ -2,21 +2,73 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:Radio_Blue_Point.Views"
+             xmlns:vm ="clr-namespace:Radio_Blue_Point.ViewModels"
              x:Class="Radio_Blue_Point.Views.StreamingPage"
              BackgroundImageSource="sfondo_app.jpg"
              Opacity="0.8"
              Title="Streaming">
 
-    <StackLayout>
-        <Label  Text="Radio"  Margin="20,20,0,-30" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="StartAndExpand" CharacterSpacing="2" />
-        <Label Text="Blue" Margin="0,0,0,-30" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="Center" CharacterSpacing="2"/>
-        <Label Text="Point"  Margin="0,0,30,0" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="EndAndExpand" CharacterSpacing="2"/>
+    <ContentPage.BindingContext>
+        <vm:StreamingPageViewModel/>
+    </ContentPage.BindingContext>
 
-    </StackLayout>
-    
-    
+        <StackLayout>
+              <Label  Text="Radio"  Margin="20,20,0,-30" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="StartAndExpand" CharacterSpacing="2" />
+             <Label Text="Blue" Margin="0,0,0,-30" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="Center" CharacterSpacing="2"/>
+             <Label Text="Point"  Margin="0,0,30,0" FontFamily="{StaticResource Lobster}" FontSize="60" TextColor="White" HorizontalOptions="EndAndExpand" CharacterSpacing="2"/>
 
+
+
+
+        <CarouselView ItemsSource="{Binding program}" 
+                          VerticalOptions="EndAndExpand" 
+                          HeightRequest="300"
+                          PeekAreaInsets="100">
+            <CarouselView.ItemsLayout >
+                <LinearItemsLayout Orientation="Horizontal" ItemSpacing="0" />
+            </CarouselView.ItemsLayout>
+
+
+            <CarouselView.ItemTemplate>
+                   <DataTemplate>
+
+                         <StackLayout>
+                             
+                             <Frame HeightRequest="250" WidthRequest="170" Margin="20" Padding="0"
+                                      CornerRadius="20" HasShadow="True"
+                                      VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand"
+                                       BackgroundColor="White">
+                                  <Grid>
+                                      <StackLayout BackgroundColor="Black">
+                                            <Image Source="{Binding imgProgram}" 
+                                               Aspect="AspectFill"
+                                                  HeightRequest="250"
+                                                  Opacity="0.7"/>
+                                      </StackLayout>
+                                      <StackLayout>
+                                             <StackLayout Orientation="Horizontal"
+                                                       VerticalOptions="EndAndExpand"
+                                                       Margin="10">
+                                                      <Label Text="{Binding orario}" TextColor="White"  FontSize="10"/>
+                                                      <Image Source="bluepoint.png" WidthRequest="15" />
+                                             </StackLayout>
+                                             <Label Text="{Binding nomeProgramma}"
+                                                  Margin="10,-12,0,30"
+                                                  TextColor="White" FontSize="15" FontAttributes="Bold" />
+                                      </StackLayout>
+                                  </Grid>
+                             </Frame>
+                             
+                        </StackLayout>
+                         
+                     </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+
+
+        </StackLayout>
     
-    
+ 
     
 </ContentPage>

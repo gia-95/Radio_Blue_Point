@@ -117,5 +117,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\sfondo_app.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bluepoint.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
