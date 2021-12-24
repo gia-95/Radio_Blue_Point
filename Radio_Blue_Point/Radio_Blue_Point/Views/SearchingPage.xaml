@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radio_Blue_Point.Views.SearchingPage"
+             BackgroundColor="Black">
+
+
+    <StackLayout>
+        <Frame BackgroundColor="#363636" 
+               HeightRequest="40"
+               Padding="7">
+            <Frame
+                CornerRadius="5"
+                BackgroundColor="Gray"
+                Padding="0">
+                <StackLayout Orientation="Horizontal">
+                    <Entry BackgroundColor="Red" Placeholder="Search..." WidthRequest="320" />
+                    <Image Source="https://www.iconsdb.com/icons/preview/white/active-search-xxl.png" />
+
+                </StackLayout>
+
+            </Frame>
+
+
+        </Frame>
+        
+    </StackLayout>
+    
+    
+    
+    
+    
+    
+    
+</ContentPage>

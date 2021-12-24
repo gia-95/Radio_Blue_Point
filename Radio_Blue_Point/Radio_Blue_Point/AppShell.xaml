@@ -90,6 +90,9 @@
     <FlyoutItem Title="Storia della radio" Icon="icona_radio.png">
         <ShellContent  ContentTemplate="{DataTemplate local:HistoryPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Search">
+        <ShellContent  ContentTemplate="{DataTemplate local:SearchingPage}" />
+    </FlyoutItem>
 
     <!--
     <FlyoutItem Title="Browse" Icon="icon_feed.png">
