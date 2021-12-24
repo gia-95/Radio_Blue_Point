@@ -25,33 +25,212 @@
                 </Frame>
             </Frame>
 
-            <Frame Margin="10" CornerRadius="10" HeightRequest="60" >
-                <StackLayout Orientation="Horizontal" BackgroundColor="Red" Margin="-10">
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" BackgroundColor="Transparent" BorderColor="Blue" >
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="-10">
                     <Frame Padding="0" 
                            HorizontalOptions="StartAndExpand" 
                            WidthRequest="80"
                            CornerRadius="10">
                         <Image Source="https://images.pexels.com/photos/534283/pexels-photo-534283.jpeg"  Aspect="Fill" />
                     </Frame>
-                    <StackLayout BackgroundColor="Azure" HorizontalOptions="StartAndExpand" WidthRequest="250">
-                        <Label BackgroundColor="Green" Text="TITOLO CANZONE" TextColor="White"  />
-                        <StackLayout Orientation="Horizontal" BackgroundColor="Violet" >
-                            <Label BackgroundColor="Blue" Text="Album o artista" TextColor="White" />
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" WidthRequest="270">
+                        <Label BackgroundColor="Transparent" Text="TITOLO CANZONE"
+                               Margin="0,15,0,0"
+                               FontSize="15" 
+                               FontAttributes="Bold" 
+                               TextColor="White" />
+                        <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
+                            <Label BackgroundColor="Transparent"
+                                   Margin="0,3,0,0"
+                                   HorizontalOptions="StartAndExpand"
+                                   Text="Album o artista" 
+                                   TextColor="White"
+                                   FontAttributes="Italic"
+                                   FontSize="13"/>
+                            <Button BackgroundColor="#bf0000" 
+                                    Margin="0,5,10,20"
+                                    Padding="-10"
+                                    Text="TESTO"
+                                    FontSize="11"
+                                    FontAttributes="Bold"
+                                    TextColor="White" 
+                                    WidthRequest="70"/>
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>
-
-
-
             </Frame>
-            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
-            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
-            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
-            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
-            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
-
-
-
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" BackgroundColor="Transparent" BorderColor="Blue" >
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="-10">
+                    <Frame Padding="0" 
+                           HorizontalOptions="StartAndExpand" 
+                           WidthRequest="80"
+                           CornerRadius="10">
+                        <Image Source="https://images.pexels.com/photos/534283/pexels-photo-534283.jpeg"  Aspect="Fill" />
+                    </Frame>
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" WidthRequest="270">
+                        <Label BackgroundColor="Transparent" Text="TITOLO CANZONE"
+                               Margin="0,15,0,0"
+                               FontSize="15" 
+                               FontAttributes="Bold" 
+                               TextColor="White" />
+                        <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
+                            <Label BackgroundColor="Transparent"
+                                   Margin="0,3,0,0"
+                                   HorizontalOptions="StartAndExpand"
+                                   Text="Album o artista" 
+                                   TextColor="White"
+                                   FontAttributes="Italic"
+                                   FontSize="13"/>
+                            <Button BackgroundColor="#bf0000" 
+                                    Margin="0,5,10,20"
+                                    Padding="-10"
+                                    Text="TESTO"
+                                    FontSize="11"
+                                    FontAttributes="Bold"
+                                    TextColor="White" 
+                                    WidthRequest="70"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" BackgroundColor="Transparent" BorderColor="Blue" >
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="-10">
+                    <Frame Padding="0" 
+                           HorizontalOptions="StartAndExpand" 
+                           WidthRequest="80"
+                           CornerRadius="10">
+                        <Image Source="https://images.pexels.com/photos/534283/pexels-photo-534283.jpeg"  Aspect="Fill" />
+                    </Frame>
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" WidthRequest="270">
+                        <Label BackgroundColor="Transparent" Text="TITOLO CANZONE"
+                               Margin="0,15,0,0"
+                               FontSize="15" 
+                               FontAttributes="Bold" 
+                               TextColor="White" />
+                        <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
+                            <Label BackgroundColor="Transparent"
+                                   Margin="0,3,0,0"
+                                   HorizontalOptions="StartAndExpand"
+                                   Text="Album o artista" 
+                                   TextColor="White"
+                                   FontAttributes="Italic"
+                                   FontSize="13"/>
+                            <Button BackgroundColor="#bf0000" 
+                                    Margin="0,5,10,20"
+                                    Padding="-10"
+                                    Text="TESTO"
+                                    FontSize="11"
+                                    FontAttributes="Bold"
+                                    TextColor="White" 
+                                    WidthRequest="70"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" BackgroundColor="Transparent" BorderColor="Blue" >
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="-10">
+                    <Frame Padding="0" 
+                           HorizontalOptions="StartAndExpand" 
+                           WidthRequest="80"
+                           CornerRadius="10">
+                        <Image Source="https://images.pexels.com/photos/534283/pexels-photo-534283.jpeg"  Aspect="Fill" />
+                    </Frame>
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" WidthRequest="270">
+                        <Label BackgroundColor="Transparent" Text="TITOLO CANZONE"
+                               Margin="0,15,0,0"
+                               FontSize="15" 
+                               FontAttributes="Bold" 
+                               TextColor="White" />
+                        <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
+                            <Label BackgroundColor="Transparent"
+                                   Margin="0,3,0,0"
+                                   HorizontalOptions="StartAndExpand"
+                                   Text="Album o artista" 
+                                   TextColor="White"
+                                   FontAttributes="Italic"
+                                   FontSize="13"/>
+                            <Button BackgroundColor="#bf0000" 
+                                    Margin="0,5,10,20"
+                                    Padding="-10"
+                                    Text="TESTO"
+                                    FontSize="11"
+                                    FontAttributes="Bold"
+                                    TextColor="White" 
+                                    WidthRequest="70"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" BackgroundColor="Transparent" BorderColor="Blue" >
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="-10">
+                    <Frame Padding="0" 
+                           HorizontalOptions="StartAndExpand" 
+                           WidthRequest="80"
+                           CornerRadius="10">
+                        <Image Source="https://images.pexels.com/photos/534283/pexels-photo-534283.jpeg"  Aspect="Fill" />
+                    </Frame>
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" WidthRequest="270">
+                        <Label BackgroundColor="Transparent" Text="TITOLO CANZONE"
+                               Margin="0,15,0,0"
+                               FontSize="15" 
+                               FontAttributes="Bold" 
+                               TextColor="White" />
+                        <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
+                            <Label BackgroundColor="Transparent"
+                                   Margin="0,3,0,0"
+                                   HorizontalOptions="StartAndExpand"
+                                   Text="Album o artista" 
+                                   TextColor="White"
+                                   FontAttributes="Italic"
+                                   FontSize="13"/>
+                            <Button BackgroundColor="#bf0000" 
+                                    Margin="0,5,10,20"
+                                    Padding="-10"
+                                    Text="TESTO"
+                                    FontSize="11"
+                                    FontAttributes="Bold"
+                                    TextColor="White" 
+                                    WidthRequest="70"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" BackgroundColor="Transparent" BorderColor="Blue" >
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" Margin="-10">
+                    <Frame Padding="0" 
+                           HorizontalOptions="StartAndExpand" 
+                           WidthRequest="80"
+                           CornerRadius="10">
+                        <Image Source="https://images.pexels.com/photos/534283/pexels-photo-534283.jpeg"  Aspect="Fill" />
+                    </Frame>
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" WidthRequest="270">
+                        <Label BackgroundColor="Transparent" Text="TITOLO CANZONE"
+                               Margin="0,15,0,0"
+                               FontSize="15" 
+                               FontAttributes="Bold" 
+                               TextColor="White" />
+                        <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
+                            <Label BackgroundColor="Transparent"
+                                   Margin="0,3,0,0"
+                                   HorizontalOptions="StartAndExpand"
+                                   Text="Album o artista" 
+                                   TextColor="White"
+                                   FontAttributes="Italic"
+                                   FontSize="13"/>
+                            <Button BackgroundColor="#bf0000" 
+                                    Margin="0,5,10,20"
+                                    Padding="-10"
+                                    Text="TESTO"
+                                    FontSize="11"
+                                    FontAttributes="Bold"
+                                    TextColor="White" 
+                                    WidthRequest="70"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            
+            
         </StackLayout>
         
     </ScrollView>
