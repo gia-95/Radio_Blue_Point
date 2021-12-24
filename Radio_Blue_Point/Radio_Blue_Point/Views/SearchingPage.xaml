@@ -5,27 +5,59 @@
              BackgroundColor="Black">
 
 
-    <StackLayout>
-        <Frame BackgroundColor="#363636" 
-               HeightRequest="40"
-               Padding="7">
-            <Frame
-                CornerRadius="5"
-                BackgroundColor="Gray"
-                Padding="0">
-                <StackLayout Orientation="Horizontal">
-                    <Entry BackgroundColor="Transparent" Placeholder="Search..." WidthRequest="320" />
-                    <Grid Margin="7">
-                        <Button BackgroundColor="Transparent" />
-                        <Image Source="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png" />
-                    </Grid>
-                </StackLayout>
+    <ScrollView>
+        
+        <StackLayout >
+            <Frame BackgroundColor="#363636" 
+                    HeightRequest="40"
+                       Padding="7"
+                    Margin="0,0,0,20">
+                <Frame CornerRadius="5"
+                         BackgroundColor="Gray"
+                         Padding="0">
+                    <StackLayout Orientation="Horizontal">
+                        <Entry BackgroundColor="Transparent" Placeholder="Search..." WidthRequest="320" />
+                        <Grid Margin="7">
+                            <Button BackgroundColor="Transparent" />
+                            <Image Source="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
             </Frame>
 
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" >
+                <StackLayout Orientation="Horizontal" BackgroundColor="Red" Margin="-10">
+                    <Frame Padding="0" 
+                           HorizontalOptions="StartAndExpand" 
+                           WidthRequest="80"
+                           CornerRadius="10">
+                        <Image Source="https://images.pexels.com/photos/534283/pexels-photo-534283.jpeg"  Aspect="Fill" />
+                    </Frame>
+                    <StackLayout BackgroundColor="Azure" HorizontalOptions="StartAndExpand" WidthRequest="250">
+                        <Label BackgroundColor="Green" Text="TITOLO CANZONE" TextColor="White"  />
+                        <StackLayout Orientation="Horizontal" BackgroundColor="Violet" >
+                            <Label BackgroundColor="Blue" Text="Album o artista" TextColor="White" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
 
-        </Frame>
+
+
+            </Frame>
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
+            <Frame Margin="10" CornerRadius="10" HeightRequest="60" />
+
+
+
+        </StackLayout>
         
-    </StackLayout>
+    </ScrollView>
+    
+    
+    
     
     
     
