@@ -14,11 +14,12 @@
                 BackgroundColor="Gray"
                 Padding="0">
                 <StackLayout Orientation="Horizontal">
-                    <Entry BackgroundColor="Red" Placeholder="Search..." WidthRequest="320" />
-                    <Image Source="https://www.iconsdb.com/icons/preview/white/active-search-xxl.png" />
-
+                    <Entry BackgroundColor="Transparent" Placeholder="Search..." WidthRequest="320" />
+                    <Grid Margin="7">
+                        <Button BackgroundColor="Transparent" />
+                        <Image Source="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png" />
+                    </Grid>
                 </StackLayout>
-
             </Frame>
 
 
