@@ -4,8 +4,8 @@
        xmlns:local="clr-namespace:Radio_Blue_Point.Views"
        Title="Radio_Blue_Point"
        x:Class="Radio_Blue_Point.AppShell"
-       FlyoutBackgroundImage="fly_out.png"
-       FlyoutBackgroundImageAspect="AspectFill">
+       FlyoutBackgroundColor="Black"
+       FlyoutWidth="400">
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
@@ -92,6 +92,10 @@
     </FlyoutItem>
     <FlyoutItem Title="Search">
         <ShellContent  ContentTemplate="{DataTemplate local:SearchingPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Prova">
+        <ShellContent  ContentTemplate="{DataTemplate local:ProvaPage}" />
     </FlyoutItem>
 
     <!--
