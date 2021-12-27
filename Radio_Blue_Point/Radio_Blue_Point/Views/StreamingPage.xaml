@@ -15,20 +15,24 @@
 
         <StackLayout>
 
-        <StackLayout Orientation="Horizontal">
-                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource Primary}" CornerRadius="50" HeightRequest="55" Margin="10,30,0,0" Padding="0">
-                <Label Text="Radio Blue Point"  Margin="20,8,20,0" FontFamily="{StaticResource Lobster}" FontSize="30" TextColor="White" HorizontalOptions="StartAndExpand" CharacterSpacing="2"/>
-            </Frame>
-            <Image Source="bluepoint.png"  HeightRequest="50" Margin="0,30,0,0"/>
-        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                <Frame BackgroundColor="Transparent" BorderColor="#38a5ff" CornerRadius="50" Margin="0,30,0,0" Padding="0">
+                    <Label Text="Radio Blue Point"
+                           Margin="20,8,20,0" 
+                           FontFamily="{StaticResource Lobster}" 
+                           FontSize="38" TextColor="White" 
+                           HorizontalOptions="CenterAndExpand"
+                           CharacterSpacing="2"/>
+                </Frame>
+            </StackLayout>
 
 
         <StackLayout Orientation="Horizontal" 
                      Margin="0,350,0,0">
-            <Frame  HeightRequest="80"
+            <Frame  HeightRequest="90"
                     CornerRadius="100"
                     Padding="0"
-                    BackgroundColor="Black">
+                    BackgroundColor="Transparent">
                 <Image Source="play.png" Aspect="AspectFill" />
             </Frame>
                 <StackLayout>
@@ -37,7 +41,7 @@
                        HeightRequest="35"
                        CornerRadius="1"
                        Margin="0,0,150,0">
-                        <Button Text="ON AIR" FontSize="20" FontAttributes="Italic" TextColor="White" BackgroundColor="Red" Margin="-10" Command="{Binding PlayCommand}" />
+                        <Button Text="ON AIR" FontSize="20"  FontAttributes="Italic" TextColor="White" BackgroundColor="Red" Margin="-10" Command="{Binding PlayCommand}" />
                     </Frame>
                     <Frame Padding="0" Margin="0,0,0,0" BackgroundColor="Transparent">
                         <Label Text="- PROGRAMMA IN ONDA-" TextColor="White" FontSize="24" Margin="0" FontAttributes="Bold"/>

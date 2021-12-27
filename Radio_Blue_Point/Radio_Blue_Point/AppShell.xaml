@@ -4,8 +4,8 @@
        xmlns:local="clr-namespace:Radio_Blue_Point.Views"
        Title="Radio_Blue_Point"
        x:Class="Radio_Blue_Point.AppShell"
-       FlyoutBackgroundColor="Black"
-       FlyoutWidth="400">
+       FlyoutBackgroundColor="#38a5ff"
+       FlyoutWidth="280">
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
