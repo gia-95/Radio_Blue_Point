@@ -19,7 +19,7 @@ namespace Radio_Blue_Point.Views
             InitializeComponent();
             BindingContext = this;
             SongStack.IsVisible = false;
-
+            SearchButton.IsEnabled = false;
             BottoneTesto2.IsVisible = false;
             BottoneTesto3.IsVisible = false;
             BottoneTesto4.IsVisible = false;

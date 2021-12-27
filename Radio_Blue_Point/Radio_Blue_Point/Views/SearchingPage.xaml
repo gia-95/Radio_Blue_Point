@@ -24,8 +24,10 @@
                     <StackLayout Orientation="Horizontal">
                         <Entry x:Name="EntryArtista" BackgroundColor="Transparent" Placeholder="Cerca..." WidthRequest="320" TextChanged="EntryArtista_TextChanged" />
                         <Grid Margin="7">
-                            <Image Source="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png" />
-                            <Button x:Name="SearchButton" BackgroundColor="Red" Clicked="Button_Clicked" />
+                            <ImageButton x:Name="SearchButton" 
+                                         Source="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png"
+                                         BackgroundColor="Transparent"
+                                         Clicked="Button_Clicked" />
                            
                         </Grid>
                     </StackLayout>
