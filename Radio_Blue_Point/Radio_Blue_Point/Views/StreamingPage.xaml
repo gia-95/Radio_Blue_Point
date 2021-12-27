@@ -29,11 +29,12 @@
 
         <StackLayout Orientation="Horizontal" 
                      Margin="0,350,0,0">
-            <Frame  HeightRequest="90"
-                    CornerRadius="100"
+            <Frame  HeightRequest="80"
+                    WidthRequest="100"
+                    CornerRadius="0"
                     Padding="0"
                     BackgroundColor="Transparent">
-                <Image Source="play.png" Aspect="AspectFill" />
+                <Image Source="play.png" Margin="-50" Aspect="Fill" />
             </Frame>
                 <StackLayout>
                     <Frame Padding="0" 
