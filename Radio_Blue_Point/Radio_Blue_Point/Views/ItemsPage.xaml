@@ -2,14 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Radio_Blue_Point.Views.ItemsPage"
-             Title="{Binding Title}"
+             Title="Playlist"
              xmlns:local="clr-namespace:Radio_Blue_Point.ViewModels"  
              xmlns:model="clr-namespace:Radio_Blue_Point.Models"  
              x:Name="BrowseItemsPage">
 
+    <!--
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
     </ContentPage.ToolbarItems>
+    -->
     <!--
       x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
       https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
@@ -20,15 +22,27 @@
                 SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10" x:DataType="model:Item">
-                        <Label Text="{Binding Text}" 
-                            LineBreakMode="NoWrap" 
-                            Style="{DynamicResource ListItemTextStyle}" 
-                            FontSize="16" />
-                        <Label Text="{Binding Description}" 
-                            LineBreakMode="NoWrap"
-                            Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="13" />
+                    <StackLayout Padding="10" BackgroundColor="Green" x:DataType="model:Item">
+
+                        <Frame BackgroundColor="Yellow" HeightRequest="50" Padding="10,15,10,10" CornerRadius="10" BorderColor="#38a5ff">
+                            <StackLayout>
+                                <Label Text="{Binding Text}"
+                                       BackgroundColor="Brown"
+                                       LineBreakMode="NoWrap" 
+                                       FontSize="20"
+                                       FontAttributes="Bold"
+                                       TextColor="White"/>
+                                <Label Text="{Binding Description}"
+                                       Margin="20,0,0,0"
+                                       BackgroundColor="Brown"
+                                       LineBreakMode="NoWrap"
+                                       FontSize="15" />
+                            </StackLayout>
+
+                        </Frame>
+                        
+                    
+                        
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
                                 NumberOfTapsRequired="1"

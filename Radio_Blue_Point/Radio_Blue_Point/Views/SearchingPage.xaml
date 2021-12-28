@@ -50,15 +50,15 @@
                                FontSize="15" 
                                FontAttributes="Bold" 
                                TextColor="White" />
-                        <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
-                            <Label x:Name="labelA1" BackgroundColor="Transparent"
+                            <Button BackgroundColor="Green" HeightRequest="20" Clicked="Button_Clicked_1"  />
+                            <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
+                                <Label x:Name="labelA1" BackgroundColor="Transparent"
                                    Margin="0,3,0,0"
                                    HorizontalOptions="StartAndExpand"
                                    TextColor="White"
                                    FontAttributes="Italic"
                                    FontSize="13"/>
-                            <Button x:Name="BottoneTesto1"
-                                    Clicked="BottoneTesto1_Clicked"
+                                <Button x:Name="BottoneTesto1"
                                     BackgroundColor="Blue" 
                                     Margin="0,5,10,20"
                                     Padding="-10"
@@ -85,7 +85,8 @@
                                FontSize="15" 
                                FontAttributes="Bold" 
                                TextColor="White" />
-                        <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
+                            <Button BackgroundColor="Green" HeightRequest="20" Clicked="Button_Clicked_2"  />
+                            <StackLayout Orientation="Horizontal" HeightRequest="45" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" >
                             <Label x:Name="labelA2" BackgroundColor="Transparent"
                                    Margin="0,3,0,0"
                                    HorizontalOptions="StartAndExpand"

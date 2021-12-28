@@ -1,4 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
+using Radio_Blue_Point.Models;
+using Radio_Blue_Point.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -189,6 +191,7 @@ namespace Radio_Blue_Point.Views
             SearchButton.IsEnabled = EntryArtista.Text.Length >= 1;
         }
 
+        /* Bottoni visualizzazione TESTO */
         private async void BottoneTesto1_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -339,6 +342,35 @@ namespace Radio_Blue_Point.Views
             string testo = (string)data["message"]["body"]["lyrics"]["lyrics_body"];
 
             await DisplayAlert(titolo10, testo, "OK");
+        }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo1,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+
+        private async void Button_Clicked_2(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
         }
     }
 }
