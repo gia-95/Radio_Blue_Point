@@ -370,7 +370,7 @@ namespace Radio_Blue_Point.Views
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = titolo2,
+                Text = titolo3,
                 Description = EntryArtista.Text
             };
 
@@ -384,7 +384,7 @@ namespace Radio_Blue_Point.Views
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = titolo2,
+                Text = titolo4,
                 Description = EntryArtista.Text
             };
 
@@ -398,7 +398,7 @@ namespace Radio_Blue_Point.Views
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = titolo2,
+                Text = titolo5,
                 Description = EntryArtista.Text
             };
 
@@ -412,7 +412,7 @@ namespace Radio_Blue_Point.Views
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = titolo2,
+                Text = titolo6,
                 Description = EntryArtista.Text
             };
 
@@ -426,7 +426,7 @@ namespace Radio_Blue_Point.Views
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = titolo2,
+                Text = titolo7,
                 Description = EntryArtista.Text
             };
 
@@ -440,7 +440,7 @@ namespace Radio_Blue_Point.Views
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = titolo2,
+                Text = titolo8,
                 Description = EntryArtista.Text
             };
 
@@ -454,7 +454,7 @@ namespace Radio_Blue_Point.Views
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = titolo2,
+                Text = titolo9,
                 Description = EntryArtista.Text
             };
 
@@ -468,7 +468,7 @@ namespace Radio_Blue_Point.Views
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = titolo2,
+                Text = titolo10,
                 Description = EntryArtista.Text
             };
 
