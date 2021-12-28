@@ -207,7 +207,6 @@ namespace Radio_Blue_Point.Views
             await DisplayAlert(titolo1, testo, "OK");
 
         }
-
         private async void BottoneTesto2_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -223,7 +222,6 @@ namespace Radio_Blue_Point.Views
             await DisplayAlert(titolo2, testo, "OK");
 
         }
-
         private async void BottoneTesto3_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -238,7 +236,6 @@ namespace Radio_Blue_Point.Views
 
             await DisplayAlert(titolo3, testo, "OK");
         }
-
         private async void BottoneTesto4_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -253,7 +250,6 @@ namespace Radio_Blue_Point.Views
 
             await DisplayAlert(titolo4, testo, "OK");
         }
-
         private async void BottoneTesto5_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -268,7 +264,6 @@ namespace Radio_Blue_Point.Views
 
             await DisplayAlert(titolo5, testo, "OK");
         }
-
         private async void BottoneTesto6_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -283,7 +278,6 @@ namespace Radio_Blue_Point.Views
 
             await DisplayAlert(titolo6, testo, "OK");
         }
-
         private async void BottoneTesto7_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -298,7 +292,6 @@ namespace Radio_Blue_Point.Views
 
             await DisplayAlert(titolo7, testo, "OK");
         }
-
         private async void BottoneTesto8_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -313,7 +306,6 @@ namespace Radio_Blue_Point.Views
 
             await DisplayAlert(titolo8, testo, "OK");
         }
-
         private async void BottoneTesto9_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -328,7 +320,6 @@ namespace Radio_Blue_Point.Views
 
             await DisplayAlert(titolo9, testo, "OK");
         }
-
         private async void BottoneTesto10_Clicked(object sender, EventArgs e)
         {
             string q = "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id={0}&page_size=3&page=1&s_track_rating=desc&apikey=aea40b403142b19db04d7dbe3a92ed6a";
@@ -344,6 +335,8 @@ namespace Radio_Blue_Point.Views
             await DisplayAlert(titolo10, testo, "OK");
         }
 
+
+        /* Bottoni SALVA NELLA PLAYLIST */
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
             Item newItem = new Item()
@@ -357,8 +350,119 @@ namespace Radio_Blue_Point.Views
 
             await modello.DataStore.AddItemAsync(newItem);
         }
-
         private async void Button_Clicked_2(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+        private async void Button_Clicked_3(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+        private async void Button_Clicked_4(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+        private async void Button_Clicked_5(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+        private async void Button_Clicked_6(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+        private async void Button_Clicked_7(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+        private async void Button_Clicked_8(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+        private async void Button_Clicked_9(object sender, EventArgs e)
+        {
+
+            Item newItem = new Item()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = titolo2,
+                Description = EntryArtista.Text
+            };
+
+            BaseViewModel modello = new BaseViewModel();
+
+            await modello.DataStore.AddItemAsync(newItem);
+        }
+        private async void Button_Clicked_10(object sender, EventArgs e)
         {
 
             Item newItem = new Item()

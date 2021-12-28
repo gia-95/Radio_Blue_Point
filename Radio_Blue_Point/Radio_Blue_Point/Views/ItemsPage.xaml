@@ -5,7 +5,8 @@
              Title="Playlist"
              xmlns:local="clr-namespace:Radio_Blue_Point.ViewModels"  
              xmlns:model="clr-namespace:Radio_Blue_Point.Models"  
-             x:Name="BrowseItemsPage">
+             x:Name="BrowseItemsPage"
+             BackgroundColor="Black">
 
     <!--
     <ContentPage.ToolbarItems>
@@ -22,20 +23,24 @@
                 SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10" BackgroundColor="Green" x:DataType="model:Item">
+                    <StackLayout Padding="10" BackgroundColor="Transparent" x:DataType="model:Item">
 
-                        <Frame BackgroundColor="Yellow" HeightRequest="50" Padding="10,15,10,10" CornerRadius="10" BorderColor="#38a5ff">
+                        <Frame BackgroundColor="Transparent" HeightRequest="60" Padding="10,15,10,10" CornerRadius="10" BorderColor="#38a5ff">
                             <StackLayout>
                                 <Label Text="{Binding Text}"
-                                       BackgroundColor="Brown"
+                                       BackgroundColor="Transparent"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Margin="0,-5,0,0"
                                        LineBreakMode="NoWrap" 
-                                       FontSize="20"
+                                       FontSize="25"
                                        FontAttributes="Bold"
                                        TextColor="White"/>
                                 <Label Text="{Binding Description}"
-                                       Margin="20,0,0,0"
-                                       BackgroundColor="Brown"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Margin="0,0,0,0"
+                                       BackgroundColor="Transparent"
                                        LineBreakMode="NoWrap"
+                                       TextColor="White"
                                        FontSize="15" />
                             </StackLayout>
 
@@ -45,7 +50,7 @@
                         
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer 
-                                NumberOfTapsRequired="1"
+                                NumberOfTapsRequired="0"
                                 Command="{Binding Source={RelativeSource AncestorType={x:Type local:ItemsViewModel}}, Path=ItemTapped}"		
                                 CommandParameter="{Binding .}">
                             </TapGestureRecognizer>
