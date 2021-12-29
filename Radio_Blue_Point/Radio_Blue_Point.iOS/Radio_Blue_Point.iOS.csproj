@@ -176,4 +176,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\play.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\music_icon.png" />
+  </ItemGroup>
 </Project>

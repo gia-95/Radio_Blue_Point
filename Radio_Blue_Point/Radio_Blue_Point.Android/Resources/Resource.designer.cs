@@ -11770,7 +11770,7 @@ namespace Radio_Blue_Point.Droid
 			public const int mtrl_tabs_default_indicator = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int music = 2131165322;
+			public const int music_icon = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
 			public const int navigation_empty_icon = 2131165323;
