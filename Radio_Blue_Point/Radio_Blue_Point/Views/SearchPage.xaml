@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm ="clr-namespace:Radio_Blue_Point.ViewModels"
+             x:Class="Radio_Blue_Point.Views.SearchPage">
+
+
+    <ContentPage.BindingContext>
+        <vm:SearchViewModel/>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        
+        <StackLayout>
+        <Entry BackgroundColor="Green" Text="{Binding ArtistEntry}"/>
+
+        <Label BackgroundColor="Blue" FontSize="20" TextColor="White" Text="{Binding ArtistEntry}" />
+
+        <Button BackgroundColor="Yellow" Command="{Binding EseguiQueryCommand}" />
+
+
+            <CollectionView x:Name="ListaCanzoni"
+                ItemsSource="{Binding Canzoni}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Blue" HasShadow="False" Margin="10">
+                            <StackLayout>
+                                <Label BackgroundColor="Black" TextColor="White" Text="{Binding Titolo  }" />
+                                <Button BackgroundColor="red"
+                                        HeightRequest="30" 
+                                        Command="{Binding Path=BindingContext.TextCommand, Source={x:Reference ListaCanzoni} }"
+                                        CommandParameter="{Binding .}"/>
+                                <Button BackgroundColor="Gray" 
+                                        Command="{Binding Path=BindingContext.SaveSongCommand, Source={x:Reference ListaCanzoni} }"
+                                        CommandParameter="{Binding .}" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+            
+            
+    </StackLayout>
+        
+        
+    </ScrollView>
+
+    
+
+
+
+
+
+</ContentPage>

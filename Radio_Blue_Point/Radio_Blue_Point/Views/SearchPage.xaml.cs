@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Radio_Blue_Point.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProvaPage : ContentPage
+    public partial class SearchPage : ContentPage
     {
-        public ProvaPage()
+        public SearchPage()
         {
             InitializeComponent();
         }

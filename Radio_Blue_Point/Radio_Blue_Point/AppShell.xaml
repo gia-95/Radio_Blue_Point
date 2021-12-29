@@ -93,6 +93,9 @@
     <FlyoutItem Title="Canzoni Salvate" Icon="music_icon.png">
         <ShellContent  ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Prova">
+        <ShellContent  ContentTemplate="{DataTemplate local:SearchPage}" />
+    </FlyoutItem>
 
     <!--
     <FlyoutItem Title="Browse" Icon="icon_feed.png">
