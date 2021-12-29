@@ -15,6 +15,7 @@ namespace Radio_Blue_Point.ViewModels
         public ObservableCollection<Item> Items { get; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
+        public Command DeleteCommand { get; }
         public Command<Item> ItemTapped { get; }
 
         public ItemsViewModel()
@@ -26,6 +27,16 @@ namespace Radio_Blue_Point.ViewModels
             ItemTapped = new Command<Item>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
+
+            DeleteCommand = new Command(DeleteItem);
+        }
+
+        public void DeleteItem(object obj)
+        {
+            var content = obj as Item;
+            DataStore.DeleteItemAsync(content.Id);
+            Items.Remove(content);
+
         }
 
         async Task ExecuteLoadItemsCommand()

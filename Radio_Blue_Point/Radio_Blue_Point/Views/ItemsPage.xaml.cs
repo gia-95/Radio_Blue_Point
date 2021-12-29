@@ -28,5 +28,6 @@ namespace Radio_Blue_Point.Views
             base.OnAppearing();
             _viewModel.OnAppearing();
         }
+
     }
 }

@@ -25,9 +25,16 @@
                 <DataTemplate>
                     <StackLayout Padding="10" BackgroundColor="Transparent" x:DataType="model:Item">
 
-                        <Frame BackgroundColor="Transparent" HeightRequest="60" Padding="10,15,10,10" CornerRadius="10" BorderColor="#38a5ff">
-                            <StackLayout>
-                                <Label Text="{Binding Text}"
+                        <SwipeView >
+                            <SwipeView.RightItems >
+                                <SwipeItem IconImageSource="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-4/512/trash-icon.png" 
+                                           Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsListView} }"
+                                           CommandParameter="{Binding .}"
+                                           BackgroundColor="Red" />
+                            </SwipeView.RightItems>
+                            <Frame BackgroundColor="Transparent" HeightRequest="60" Padding="10,15,10,10" CornerRadius="10" BorderColor="#38a5ff">
+                                <StackLayout>
+                                        <Label Text="{Binding Text}"
                                        BackgroundColor="Transparent"
                                        HorizontalOptions="CenterAndExpand"
                                        Margin="0,-5,0,0"
@@ -35,16 +42,19 @@
                                        FontSize="25"
                                        FontAttributes="Bold"
                                        TextColor="White"/>
-                                <Label Text="{Binding Description}"
+                                        <Label Text="{Binding Description}"
                                        HorizontalOptions="CenterAndExpand"
                                        Margin="0,0,0,0"
                                        BackgroundColor="Transparent"
                                        LineBreakMode="NoWrap"
                                        TextColor="White"
                                        FontSize="15" />
-                            </StackLayout>
+                                    </StackLayout>
+                            </Frame>
 
-                        </Frame>
+                        </SwipeView>
+                        
+                        
                         
                     
                         
