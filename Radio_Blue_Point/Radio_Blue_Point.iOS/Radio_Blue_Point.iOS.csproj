@@ -179,4 +179,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\music_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_playlist.png" />
+  </ItemGroup>
 </Project>
