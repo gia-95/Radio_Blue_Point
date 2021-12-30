@@ -85,7 +85,7 @@
         <ShellContent  ContentTemplate="{DataTemplate local:StreamingPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Cerca il tuo artista preferito" Icon="icona_utente_cuore.png">
-        <ShellContent  ContentTemplate="{DataTemplate local:SearchingPage}" Icon="icona_utente_cuore.png" />
+        <ShellContent  ContentTemplate="{DataTemplate local:SearchPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Storia della radio" Icon="icona_radio.png">
         <ShellContent  ContentTemplate="{DataTemplate local:HistoryPage}" />
@@ -94,7 +94,7 @@
         <ShellContent  ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Prova">
-        <ShellContent  ContentTemplate="{DataTemplate local:SearchPage}" />
+        <ShellContent  ContentTemplate="{DataTemplate local:TextPage}"  />
     </FlyoutItem>
 
     <!--
