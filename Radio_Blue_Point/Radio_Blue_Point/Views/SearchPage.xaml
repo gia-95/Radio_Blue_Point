@@ -20,6 +20,7 @@
                    Padding="5">
                 <StackLayout Orientation="Horizontal">
                     <Entry BackgroundColor="Transparent"
+                           Placeholder="Cerca..."
                            WidthRequest="320"
                            Text="{Binding ArtistEntry}" />
                     <ImageButton Source="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png"

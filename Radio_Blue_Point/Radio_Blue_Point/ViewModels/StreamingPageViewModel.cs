@@ -27,11 +27,14 @@ namespace Radio_Blue_Point.ViewModels
         public Command PlayCommand { get; }
         public Command SiteCommand { get; }
 
+        public Command FaceBookCommand { get; }
+
         public StreamingPageViewModel()
         {
             program = new ObservableCollection<ProgramPage>();
             PlayCommand = new Command(async () => await Browser.OpenAsync("http://nrf1.newradio.it:10090/stream"));
             SiteCommand = new Command(async () => await Browser.OpenAsync("https://radio-blue-point.jimdosite.com/"));
+            FaceBookCommand = new Command(async () => await Browser.OpenAsync("https://www.facebook.com/radiobluepoint.civitavecchia"));
             addProgram();
         }
 
