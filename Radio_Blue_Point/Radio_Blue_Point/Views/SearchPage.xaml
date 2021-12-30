@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm ="clr-namespace:Radio_Blue_Point.ViewModels"
-             x:Class="Radio_Blue_Point.Views.SearchPage">
+             x:Class="Radio_Blue_Point.Views.SearchPage"
+             BackgroundColor="Black">
 
 
     <ContentPage.BindingContext>
@@ -10,46 +11,73 @@
     </ContentPage.BindingContext>
 
     <ScrollView>
-        
         <StackLayout>
-        <Entry BackgroundColor="Green" Text="{Binding ArtistEntry}"/>
-
-        <Label BackgroundColor="Blue" FontSize="20" TextColor="White" Text="{Binding ArtistEntry}" />
-
-        <Button BackgroundColor="Yellow" Command="{Binding EseguiQueryCommand}" />
-
+            <Frame BackgroundColor="Gray"
+                   BorderColor="Red"
+                   CornerRadius="10"
+                   Margin="5,5,5,25"
+                   HeightRequest="38"
+                   Padding="5">
+                <StackLayout Orientation="Horizontal">
+                    <Entry BackgroundColor="Transparent"
+                           WidthRequest="320"
+                           Text="{Binding ArtistEntry}" />
+                    <ImageButton Source="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png"
+                                 HorizontalOptions="EndAndExpand"
+                                 BackgroundColor="Transparent"
+                                 Margin="0,2,8,2"
+                                 Command="{Binding EseguiQueryCommand}"/>
+                </StackLayout>
+            </Frame>
 
             <CollectionView x:Name="ListaCanzoni"
-                ItemsSource="{Binding Canzoni}">
+                            ItemsSource="{Binding Canzoni}">
+                <CollectionView.ItemsLayout >
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="15" />
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="Blue" HasShadow="False" Margin="10">
-                            <StackLayout>
-                                <Label BackgroundColor="Black" TextColor="White" Text="{Binding Titolo  }" />
-                                <Button BackgroundColor="red"
-                                        HeightRequest="30" 
-                                        Command="{Binding Path=BindingContext.TextCommand, Source={x:Reference ListaCanzoni} }"
-                                        CommandParameter="{Binding .}"/>
-                                <Button BackgroundColor="Gray" 
-                                        Command="{Binding Path=BindingContext.SaveSongCommand, Source={x:Reference ListaCanzoni} }"
-                                        CommandParameter="{Binding .}" />
-                            </StackLayout>
-                        </Frame>
+                        <SwipeView Threshold="100">
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem BackgroundColor="Blue" 
+                                               Text="playlist"
+                                               IconImageSource="icon_playlist.png"
+                                               Command="{Binding Path=BindingContext.SaveSongCommand, Source={x:Reference ListaCanzoni} }"
+                                               CommandParameter="{Binding .}"/>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <Frame BackgroundColor="#38a5ff"
+                                      Margin="5"
+                                     HasShadow="True"
+                                       CornerRadius="10"
+                                     HeightRequest="70"
+                                    Padding="10">
+                                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+                                    <Frame BorderColor="Black"
+                           HasShadow="True"
+                           CornerRadius="5"
+                           WidthRequest="70"
+                           Padding="0">
+                                        <Image Source="cd.png"  Aspect="Fill" />
+                                    </Frame>
+                                    <StackLayout BackgroundColor="Transparent"
+                                 WidthRequest="285">
+                                        <Label BackgroundColor="Transparent" MaxLines="-1" LineBreakMode="TailTruncation"  Text="{Binding Titolo}" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="5,5,0,5"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label BackgroundColor="Transparent" MaxLines="-1" LineBreakMode="TailTruncation" Text="{Binding Album}" TextColor="White" FontSize="15" FontAttributes="Italic" Margin="5,0,0,0"/>
+                                            <Button Command="{Binding Path=BindingContext.TextCommand, Source={x:Reference ListaCanzoni} }"
+                                                CommandParameter="{Binding .}" BackgroundColor="Blue" BorderColor="White" BorderWidth="0.5" HorizontalOptions="EndAndExpand" HeightRequest="15" Padding="-10" Text="TESTO"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </SwipeView>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            
-            
-            
-    </StackLayout>
-        
-        
+
+        </StackLayout>
     </ScrollView>
-
-    
-
-
-
-
 
 </ContentPage>
