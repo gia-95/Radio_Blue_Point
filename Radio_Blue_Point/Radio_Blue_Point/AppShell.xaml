@@ -94,7 +94,7 @@
         <ShellContent  ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Prova">
-        <ShellContent  ContentTemplate="{DataTemplate local:TextPage}"  />
+        <ShellContent  ContentTemplate="{DataTemplate local:Prova2}"  />
     </FlyoutItem>
 
     <!--

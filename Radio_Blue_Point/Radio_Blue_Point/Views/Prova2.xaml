@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radio_Blue_Point.Views.Prova2">
+
+
+    <StackLayout>
+        <Entry x:Name="Nome" BackgroundColor="AliceBlue"/>
+        <Entry x:Name="Cognome" BackgroundColor="AliceBlue"/>
+        <Button x:Name="Salva" BackgroundColor="DarkGray" Text="Salva" Clicked="Salva_Clicked"/>
+        <Label x:Name="Stampa1" Background="yellow"/>
+        <Label x:Name="Stampa2" Background="yellow"/>
+        <Button x:Name="Stampa" BackgroundColor="DarkGray" Text="Salva" Clicked="Stampa_Clicked"/>
+        
+        
+    </StackLayout>
+</ContentPage>

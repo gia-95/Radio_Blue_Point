@@ -1,4 +1,5 @@
-﻿using Radio_Blue_Point.Services;
+﻿using Radio_Blue_Point.Data;
+using Radio_Blue_Point.Services;
 using Radio_Blue_Point.Views;
 using System;
 using Xamarin.Forms;
@@ -19,6 +20,19 @@ namespace Radio_Blue_Point
 
         protected override void OnStart()
         {
+        }
+
+        public static RecipesDAO database;
+        public static RecipesDAO Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new RecipesDAO();
+                }
+                return database;
+            }
         }
 
         protected override void OnSleep()
