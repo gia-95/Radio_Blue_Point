@@ -21,13 +21,14 @@ namespace Radio_Blue_Point.ViewModels
         }
 
 
+
         public SearchViewModel()
         {
             canzoni = new ObservableCollection<Song>();
             EseguiQueryCommand = new Command(RunQuery);
             TextCommand = new Command(ApriTesto);
             SaveSongCommand = new Command(SaveSong);
-            Routing.RegisterRoute("TextPage", typeof(TextPage));
+            //Routing.RegisterRoute("TextPage", typeof(TextPage));
         }
 
 
@@ -68,8 +69,7 @@ namespace Radio_Blue_Point.ViewModels
         public Command EseguiQueryCommand { get; }
         public Command TextCommand { get; }
         public Command SaveSongCommand { get; }
-
-
+        public object Navigation { get; private set; }
 
         async void RunQuery()
         {
@@ -143,7 +143,9 @@ namespace Radio_Blue_Point.ViewModels
 
                 System.Diagnostics.Debug.Print(" > {0} ", TestoCanzone);
 
-                await Shell.Current.GoToAsync(nameof(TextPage));
+                TextPage paginaTesto = new TextPage(TestoCanzone);
+
+                await Shell.Current.Navigation.PushModalAsync(paginaTesto);
 
             }
 
@@ -151,6 +153,20 @@ namespace Radio_Blue_Point.ViewModels
 
         public void addSong(string titolo, string album,string artista, int id, int hl)
         {
+
+            Random rnd = new Random();
+            int n = rnd.Next(4) + 1;
+
+            string s = Convert.ToString(n, 10);
+
+            string imm = "imm{0}.jpg";
+
+
+            string finale = String.Format(imm, s);
+            
+            System.Diagnostics.Debug.Print(" > {0} ", finale);
+
+
             Canzoni.Add(new Song
             {
                 Id = id,
@@ -158,7 +174,7 @@ namespace Radio_Blue_Point.ViewModels
                 Artista = artista,
                 Album = album,
                 Has_Lyrics = hl,
-                Image = ""
+                Image = finale
             });
         }
 

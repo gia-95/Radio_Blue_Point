@@ -13,6 +13,8 @@ namespace Radio_Blue_Point
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(SearchPage), typeof(SearchPage));
+            Routing.RegisterRoute(nameof(TextPage), typeof(TextPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

@@ -12,9 +12,17 @@ namespace Radio_Blue_Point.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TextPage : ContentPage
     {
-        public TextPage()
+        public TextPage(String testo)
         {
+
             InitializeComponent();
+
+            labelTesto.Text = testo;
+        }
+
+        async void OnDismissButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

@@ -9,7 +9,7 @@
     </ContentPage.BindingContext>
 
     <StackLayout>
-        <Label BackgroundColor="Yellow" FontSize="20" TextColor="Black" Text="{Binding TestoCanzone}" />
+        <Label x:Name="labelTesto" BackgroundColor="Yellow" FontSize="20" TextColor="Black"  />
     </StackLayout>
     
     
