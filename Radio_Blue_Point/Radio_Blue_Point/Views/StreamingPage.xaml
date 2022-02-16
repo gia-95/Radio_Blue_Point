@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Radio_Blue_Point.Views"
              xmlns:vm ="clr-namespace:Radio_Blue_Point.ViewModels"
              x:Class="Radio_Blue_Point.Views.StreamingPage"
-             BackgroundImageSource="dsodm.jpg"
+             BackgroundImageSource="Logodef.jpg"
              Opacity="1">
 
     <ContentPage.BindingContext>
@@ -15,7 +15,7 @@
 
         <StackLayout>
 
-        <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
+            <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent">
                 <Frame BackgroundColor="Transparent" BorderColor="#38a5ff" CornerRadius="50" Margin="0,30,0,0" Padding="0">
                     <Label Text="Radio Blue Point"
                            Margin="20,8,20,0" 
@@ -27,14 +27,18 @@
             </StackLayout>
 
 
-        <StackLayout Orientation="Horizontal" 
+            <StackLayout Orientation="Horizontal" 
                      Margin="0,350,0,0">
             <Frame  HeightRequest="80"
                     WidthRequest="100"
                     CornerRadius="0"
                     Padding="0"
                     BackgroundColor="Transparent">
-                <Image Source="play.png" Margin="-50" Aspect="Fill" />
+                    <Image Source="play.png" Margin="-50" Aspect="Fill" IsVisible="{Binding DisplayPlay}" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Play_tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
             </Frame>
                 <StackLayout>
                     <Frame Padding="0" 

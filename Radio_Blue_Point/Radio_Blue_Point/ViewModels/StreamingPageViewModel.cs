@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Radio_Blue_Point.Views;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -12,6 +14,16 @@ namespace Radio_Blue_Point.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        public bool DisplayPlay { get => !isPlaying; }
+        public bool DisplayPauseStop { get => isPlaying; }
+
+
+        
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
 
         private ObservableCollection<ProgramPage> Program;
 
@@ -20,7 +32,33 @@ namespace Radio_Blue_Point.ViewModels
             get { return Program; }
             set { Program = value;
 
+                
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("program"));
+            }
+        }
+
+        public void Play()
+        {
+            DependencyService.Get<IStreaming>().Play();
+            IsPlaying = true;
+        }      
+
+        public void Stop()
+        {
+            DependencyService.Get<IStreaming>().Stop();
+            IsPlaying = false;
+        }
+
+        bool isPlaying;
+        bool IsPlaying
+        {
+            get => isPlaying;
+            set
+            {
+                isPlaying = value;
+                // Notify the property has changed
+                OnPropertyChanged("DisplayPlay");
+                OnPropertyChanged("DisplayPauseStop");
             }
         }
 
