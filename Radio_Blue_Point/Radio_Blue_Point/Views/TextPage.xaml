@@ -2,15 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm ="clr-namespace:Radio_Blue_Point.ViewModels"
-             x:Class="Radio_Blue_Point.Views.TextPage">
+             x:Class="Radio_Blue_Point.Views.TextPage"
+             BackgroundColor="Black">
 
     <ContentPage.BindingContext>
         <vm:SearchViewModel/>
     </ContentPage.BindingContext>
 
-    <StackLayout>
-        <Label x:Name="labelTesto" BackgroundColor="Yellow" FontSize="20" TextColor="Black"  />
-    </StackLayout>
+    <ScrollView>
+         <StackLayout>
+            <Label Text="TESTO" HorizontalOptions="CenterAndExpand" FontSize="50" TextColor="White" Margin="20,25,20,0" FontFamily="{StaticResource Lobster}" />
+            <Frame CornerRadius="20" BackgroundColor="Black" Margin="15,10,15,15" BorderColor="#38a5ff" >
+                <Label x:Name="labelTesto" BackgroundColor="Transparent" FontSize="20" TextColor="White"  />
+            </Frame>
+        </StackLayout>
+        
+    </ScrollView>
+    
+   
     
     
     

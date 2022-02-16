@@ -31,8 +31,19 @@
                 </StackLayout>
             </Frame>
 
+            <Frame CornerRadius="30" Margin="20" Padding="10" HeightRequest="200" BorderColor="White" Opacity="0.5" >
+                <Frame CornerRadius="20" Margin="0" HeightRequest="200" BackgroundColor="Black" BorderColor="White" Opacity="1">
+                    <StackLayout>
+                        <Label BackgroundColor="Transparent" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontFamily="{StaticResource Lobster}" Text="Inserisci il tuo artista preferito..." FontSize="25" TextColor="White" Margin="0,0,0,0" />
+                        <Label BackgroundColor="Transparent" HorizontalTextAlignment="Center" FontFamily="{StaticResource Lobster}" VerticalOptions="EndAndExpand" Text="... e guarda le canzoni più ascoltate del momento!" FontSize="25" TextColor="White" Margin="0,0,0,0" />
+                    </StackLayout>
+                 
+                </Frame>
+            </Frame>
+   
+
             <CollectionView x:Name="ListaCanzoni"
-                            ItemsSource="{Binding Canzoni}">
+                            ItemsSource="{Binding Canzoni}" Margin="0,-270,0,0">
                 <CollectionView.ItemsLayout >
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="15" />
                 </CollectionView.ItemsLayout>
@@ -77,6 +88,8 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+
 
         </StackLayout>
     </ScrollView>

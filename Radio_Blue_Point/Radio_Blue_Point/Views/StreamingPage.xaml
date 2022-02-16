@@ -53,7 +53,7 @@
                 </StackLayout>
             </StackLayout>
 
-            <Label Text="Scorri per gli utlimi brani trasmessi:" FontSize="20" Margin="10,100,0,-10" TextColor="White" />
+            <Label Text="I nostri Speakers:"  FontSize="20" Margin="10,100,0,-10" TextColor="White" />
 
             <CarouselView ItemsSource="{Binding program}" 
                            HeightRequest="250"
@@ -85,8 +85,9 @@
                                             <Image Source="lampadina.png" WidthRequest="10" />
                                         </StackLayout>
                                         <Label Text="{Binding nomeProgramma}"
-                                                  Margin="10,-12,0,30"
-                                                  TextColor="White" FontSize="15" FontAttributes="Bold" />
+                                                  Margin="10,-12,0,12"
+                                                  TextColor="White" FontSize="20" FontAttributes="Bold" 
+                                                  FontFamily="{StaticResource Lobster}"  />
                                     </StackLayout>
                                 </Grid>
                             </Frame>

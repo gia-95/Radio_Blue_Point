@@ -44,7 +44,7 @@ namespace Radio_Blue_Point.ViewModels
             {
                 id = 0,
                 orario = "12.00",
-                nomeProgramma = "I Soliti Idioti",
+                nomeProgramma = "Marcantonio",
                 imgProgram = "Avicii.jpg"
             });
 
@@ -52,7 +52,7 @@ namespace Radio_Blue_Point.ViewModels
             {
                 id = 0,
                 orario = "14.00",
-                nomeProgramma = "L'Eredità",
+                nomeProgramma = "Aldo e Giovanni",
                 imgProgram = "Aldo.jpg"
             });
 
@@ -60,7 +60,7 @@ namespace Radio_Blue_Point.ViewModels
             {
                 id = 0,
                 orario = "16.00",
-                nomeProgramma = "Bella Ciao",
+                nomeProgramma = "Franchino 126",
                 imgProgram = "Linus.jpg"
             });
 
@@ -68,7 +68,7 @@ namespace Radio_Blue_Point.ViewModels
             {
                 id = 0,
                 orario = "18.00",
-                nomeProgramma = "PinguPingu",
+                nomeProgramma = "Pippo e Pluto",
                 imgProgram = "Avicii.jpg"
             });
 
@@ -76,7 +76,7 @@ namespace Radio_Blue_Point.ViewModels
             {
                 id = 0,
                 orario = "20.00",
-                nomeProgramma = "Aieiaieie",
+                nomeProgramma = "Paperino",
                 imgProgram = "Aldo.jpg"
             });
 
