@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Radio_Blue_Point.Views"
              xmlns:vm ="clr-namespace:Radio_Blue_Point.ViewModels"
              x:Class="Radio_Blue_Point.Views.StreamingPage"
-             BackgroundImageSource="Logodef.jpg"
+             BackgroundImageSource="dsodm.jpg"
              Opacity="1">
 
     <ContentPage.BindingContext>

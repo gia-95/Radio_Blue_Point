@@ -14,17 +14,25 @@ using Android.Media;
 using Xamarin.Forms;
 using Radio_Blue_Point.Droid;
 
+
+
 [assembly: Xamarin.Forms.Dependency(typeof(StreamingService))]
+
+
 
 
 namespace Radio_Blue_Point.Droid
 {
     class StreamingService : IStreaming
     {
-       MediaPlayer player;
+        MediaPlayer player;
         string dataSource = "http://nrf1.newradio.it:10090/stream";
 
+
+
         bool isPrepared = false;
+
+
 
         public void Play()
         {
@@ -35,9 +43,13 @@ namespace Radio_Blue_Point.Droid
                 else
                     player.Reset();
 
+
+
                 player.SetDataSource(dataSource);
                 player.PrepareAsync();
             }
+
+
 
             player.Prepared += (sender, args) =>
             {
@@ -46,10 +58,14 @@ namespace Radio_Blue_Point.Droid
             };
         }
 
+
+
         public void Pause()
         {
             player.Pause();
         }
+
+
 
         public void Stop()
         {
@@ -57,4 +73,5 @@ namespace Radio_Blue_Point.Droid
             isPrepared = false;
         }
     }
-    }
+}
+
