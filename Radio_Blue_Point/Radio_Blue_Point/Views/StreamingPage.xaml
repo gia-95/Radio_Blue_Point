@@ -56,7 +56,7 @@
             <Label Text="Scorri per gli utlimi brani trasmessi:" FontSize="20" Margin="10,100,0,-10" TextColor="White" />
 
             <CarouselView ItemsSource="{Binding program}" 
-                           HeightRequest="200"
+                           HeightRequest="250"
                            PeekAreaInsets="100">
             <CarouselView.ItemsLayout >
                 <LinearItemsLayout Orientation="Horizontal" ItemSpacing="0" />
@@ -66,7 +66,7 @@
 
                          <StackLayout>
 
-                            <Frame HeightRequest="200" WidthRequest="120" Margin="20" Padding="0"
+                            <Frame HeightRequest="200" WidthRequest="170" Margin="20" Padding="0"
                                       CornerRadius="20" HasShadow="True" 
                                       VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand"
                                        BackgroundColor="White">
@@ -74,7 +74,7 @@
                                     <StackLayout BackgroundColor="Black">
                                         <Image Source="{Binding imgProgram}" 
                                                Aspect="AspectFill"
-                                                  HeightRequest="170"
+                                                  HeightRequest="220"
                                                   Opacity="0.7"/>
                                     </StackLayout>
                                     <StackLayout>

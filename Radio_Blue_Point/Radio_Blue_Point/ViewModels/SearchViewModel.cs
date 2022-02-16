@@ -155,16 +155,10 @@ namespace Radio_Blue_Point.ViewModels
         {
 
             Random rnd = new Random();
-            int n = rnd.Next(4) + 1;
-
+            int n = rnd.Next(10) + 1;
             string s = Convert.ToString(n, 10);
-
             string imm = "imm{0}.jpg";
-
-
             string finale = String.Format(imm, s);
-            
-            System.Diagnostics.Debug.Print(" > {0} ", finale);
 
 
             Canzoni.Add(new Song

@@ -45,7 +45,7 @@ namespace Radio_Blue_Point.ViewModels
                 id = 0,
                 orario = "12.00",
                 nomeProgramma = "I Soliti Idioti",
-                imgProgram = "https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg"
+                imgProgram = "Avicii.jpg"
             });
 
             program.Add(new ProgramPage
@@ -53,7 +53,7 @@ namespace Radio_Blue_Point.ViewModels
                 id = 0,
                 orario = "14.00",
                 nomeProgramma = "L'Eredità",
-                imgProgram = "https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg"
+                imgProgram = "Aldo.jpg"
             });
 
             program.Add(new ProgramPage
@@ -61,7 +61,7 @@ namespace Radio_Blue_Point.ViewModels
                 id = 0,
                 orario = "16.00",
                 nomeProgramma = "Bella Ciao",
-                imgProgram = "https://images.pexels.com/photos/675960/mic-music-sound-singer-675960.jpeg"
+                imgProgram = "Linus.jpg"
             });
 
             program.Add(new ProgramPage
@@ -69,7 +69,7 @@ namespace Radio_Blue_Point.ViewModels
                 id = 0,
                 orario = "18.00",
                 nomeProgramma = "PinguPingu",
-                imgProgram = "https://images.pexels.com/photos/761963/pexels-photo-761963.jpeg"
+                imgProgram = "Avicii.jpg"
             });
 
             program.Add(new ProgramPage
@@ -77,7 +77,7 @@ namespace Radio_Blue_Point.ViewModels
                 id = 0,
                 orario = "20.00",
                 nomeProgramma = "Aieiaieie",
-                imgProgram = "https://images.pexels.com/photos/191240/pexels-photo-191240.jpeg"
+                imgProgram = "Aldo.jpg"
             });
 
         }
