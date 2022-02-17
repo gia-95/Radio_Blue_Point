@@ -1,21 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Radio_Blue_Point.Views.HistoryPage">
+             x:Class="Radio_Blue_Point.Views.HistoryPage"
+              BackgroundImageSource="R.jfif">
 
-    <ContentPage.Content>
-        <ListView>
-           <ListView.ItemTemplate>
-             <DataTemplate>
-                    <ViewCell>
-                      <StackLayout>
-                            <Label Text="aaaaaaa" TextColor="Blue" BackgroundColor="Black" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </ContentPage.Content>
+
+    <Grid>
+        <ScrollView
+                Grid.Row="0">
+            <StackLayout Orientation="Vertical" Padding="50,30,30,50" Spacing="10">
+                <Label  HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontFamily="{StaticResource Lobster}" Text="Negli anni durante i quali nascevano più radio private che bambini, la nostra zona non faceva eccezione. Erano già tante le radio nel 1978.
+                       Alcune anche già in possesso di una certa professionalità. Già da qualche anno prima, un ragazzo sedicenne innamorato della radio e di musica rock (o pop come allora si definiva) per ascoltare Jimi, Janis, Airplane, The Who, spendeva le sue nottate alla ricerca di deboli e altalenanti segnali in AM provenienti oltremanica da radio ormai leggendarie come Radio Virgin, Radio Caroline, Radio Luxmbourg. Chiaro che quel ragazzo non avrebbe potuto resistere al fenomeno radiofonico che stava esplodendo e tramite i soliti amici degli amici, entrò a far parte di una radio chiamata Zenith che trasmetteva da un vecchio casale sito in quello che al tempo poteva era periferia ed oggi praticamente centro città.La radio era già ben attrezzata ma soprattutto era vicino casa, cosa che per gli scarsi mezzi motori a disposizione, non era affatto sgradita. 
+Un pomeriggio durante uno dei frequenti stop al trasmettitore, il ragazzo e un amico più grande ma solo per carta d' identità, decisero di fare il grande passo. Una radio tutta per loro. E' così che il ragazzo, Bruno Martini e l'adulto, solo cartaceo, Alberto Carli, fondarono Radio Blue Point. Era la primavera del 1978. 
+Qualche amico radunato per l'occasione, un trasmettitore surplus militare, un'antenna autocostruita, i dischi portati da casa, una cantina in un quartiere popolare e poco altro ancora e la frequenza dei 96.800 mhz si riempirono di Radio Blue Point. 
+Questo è l'inizio di una storia avvincente, fatta di cambi, successi, crisi, entrate, uscite, chiusure e rinascite. Quaranta anni che sarebbe bellissimo raccontare ricordando fatti e persone che di Radio Blue Point hanno fatto la storia, ci sarebbe materiale da scriverci un libro e un giorno magari lo faremo. 
+Nel 2016 il segnale di Radio Blue Point era ormai spento da anni ma la passione di Bruno Martini per la radio solo rimasta sopita così, complice la spinta della compagna di sempre Maria Letizia La Noce, successo qualcosa.
+Il 27 novembre del 2016, grazie anche ad una serie di fortunati incontri, Radio Blue Point tornò a suonare in FM. 
+Lo studio a Civitavecchia in Viale Lazio snc e tre ripetitori per altrettante frequenze, 96.600 mhz per la zona della provincia di Frosinone, 104.900 per Civitavecchia, l'Alto Lazio e la bassa Toscana e 104.800 per Allumiere, Tolfa e alcune zone interne della Tuscia.
+La radio oggi non è nemmeno lontana parente di quella pioneristica dei tempi che furono. La tecnologia ha sostituito piatti, vinili, cassette e bobine. L'avvento di internet ha cambiato per sempre il modo di ascoltare musica ma la radio ha saputo adeguarsi integrando nella propria attività canali streaming e RadioTV social. 
+In ogni caso, sarà la nostalgia del tempo passato, la magia dell'etere, la meraviglia del suono che esce dalla radio, resterà per sempre inarrivabile e mai nessun segnale elettronico proveniente dalla rete potrà mai eguagliarlo. 
+E così oggi il viaggio di radio Blue Point continua, tutti i giorni, 24 ore su 24, con la solita riconosciuta caratteristica di una Radio diversa, a volte atipica nelle scelte ma forse proprio per questo apprezzata da chi non si accontenta dei soliti standard radiofonici. 
+Tornate ad accendere la radio, meglio se Radio Blue Point, moderna ma fatta come tanti anni fa."
+                TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+
 
 
 </ContentPage>
