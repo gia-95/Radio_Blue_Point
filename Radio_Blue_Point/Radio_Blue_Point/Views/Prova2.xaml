@@ -2,11 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Radio_Blue_Point.Views.Prova2"
-             >
-    
-    
-    
+             BackgroundImageSource="dsodm.jpg">
+
     <StackLayout>
-  
+
+
+        <StackLayout Orientation="Horizontal"
+                         Margin="0,30,0,0">
+            <Label Text="WhatsApp" TextColor="White" BackgroundColor="Transparent" FontAttributes="Bold" FontSize="18"  />
+            <Image Source="https://cdn.icon-icons.com/icons2/373/PNG/256/Whatsapp_37229.png" WidthRequest="22"   BackgroundColor="Transparent"/>
+            <Label Text=":" TextColor="White" FontSize="18" FontAttributes="Bold" />
+            <Label Text="+39 393 010 4800               +39 3925007845" TextColor="White" FontSize="20" Margin="15,0,0,0"  FontAttributes="Bold" BackgroundColor="Transparent" TextDecorations="Underline" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal"
+                         Margin="10,20,0,0">
+            <Label Text="Facebook" TextColor="White" BackgroundColor="Transparent" WidthRequest="130"  FontAttributes="Bold" FontSize="18"  />
+            <Image Source="https://img.icons8.com/color/344/facebook.png" WidthRequest="26" Margin="-10,-5,0,0"  BackgroundColor="Transparent"/>
+            <Label Text=":" TextColor="White" FontSize="18" FontAttributes="Bold" />
+            <Label Text="https://www.facebook.com/radiobluepoint.civitavecchia" TextColor="White" FontSize="15" Margin="15,-5,0,0" BackgroundColor="Transparent" TextDecorations="Underline" />
+        </StackLayout>
+        <Button BackgroundColor="Transparent" Command="{Binding FaceBookCommand}" HorizontalOptions="EndAndExpand" WidthRequest="200" HeightRequest="20" Margin="0,-30,40,0" />
+
+        <StackLayout Orientation="Horizontal"
+                         Margin="10,20,0,0">
+            <Label Text="Sito Web" TextColor="White" BackgroundColor="Transparent" WidthRequest="80"  FontAttributes="Bold" FontSize="18"  />
+            <Image Source="https://i0.wp.com/www.anmictrapani.it/wp-content/uploads/2018/02/International-Websites-Web-Icon.png" WidthRequest="20" Margin="-10,0,0,0"  BackgroundColor="Transparent"/>
+            <Label Text=":" TextColor="White" FontSize="18" FontAttributes="Bold"  />
+            <Label Text="https://radio-blue-point.jimdosite.com/" TextColor="White" FontSize="15" Margin="12,2,0,0" BackgroundColor="Transparent" TextDecorations="Underline" />
+        </StackLayout>
+        <Button BackgroundColor="Transparent" Margin="0,-28,10,0" WidthRequest="250" HorizontalOptions="EndAndExpand" HeightRequest="20" Command="{Binding SiteCommand}" />
+
+        <Label BackgroundColor="Transparent" Margin="0,20,0,0"/>
+
     </StackLayout>
+
 </ContentPage>

@@ -15,7 +15,7 @@ namespace Radio_Blue_Point.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         public bool DisplayPlay { get => !isPlaying; }
-        public bool DisplayPauseStop { get => isPlaying; }
+        public bool DisplayStop { get => isPlaying; }
 
 
         
@@ -58,7 +58,7 @@ namespace Radio_Blue_Point.ViewModels
                 isPlaying = value;
                 // Notify the property has changed
                 OnPropertyChanged("DisplayPlay");
-                OnPropertyChanged("DisplayPauseStop");
+                OnPropertyChanged("DisplayStop");
             }
         }
 
@@ -81,43 +81,74 @@ namespace Radio_Blue_Point.ViewModels
             program.Add(new ProgramPage
             {
                 id = 0,
-                orario = "12.00",
-                nomeProgramma = "Marcantonio",
-                imgProgram = "Avicii.jpg"
+                orario = "Ti ricordi Syd",
+                nomeProgramma = "Bruno Martini",
+                imgProgram = "bm.jpg"
             });
 
             program.Add(new ProgramPage
             {
                 id = 0,
-                orario = "14.00",
-                nomeProgramma = "Aldo e Giovanni",
-                imgProgram = "Aldo.jpg"
+                orario = "Salute e Benessere e Atlantide",
+                nomeProgramma = "Lety La Noxe",
+                imgProgram = "ll.jpg"
             });
 
             program.Add(new ProgramPage
             {
                 id = 0,
-                orario = "16.00",
-                nomeProgramma = "Franchino 126",
-                imgProgram = "Linus.jpg"
+                orario = "Dietro la musica",
+                nomeProgramma = "Angelo Lucigniani",
+                imgProgram = "al.jpg"
             });
 
             program.Add(new ProgramPage
             {
                 id = 0,
-                orario = "18.00",
-                nomeProgramma = "Pippo e Pluto",
-                imgProgram = "Avicii.jpg"
+                orario = "Casino in blu",
+                nomeProgramma = "Riccardo Battaglini",
+                imgProgram = "rb.jpg"
             });
 
             program.Add(new ProgramPage
             {
                 id = 0,
-                orario = "20.00",
-                nomeProgramma = "Paperino",
-                imgProgram = "Aldo.jpg"
+                orario = "Parole e Musica",
+                nomeProgramma = "Ugo Scialdone",
+                imgProgram = "ug.jpg"
             });
 
+            program.Add(new ProgramPage
+            {
+                id = 0,
+                orario = "Musica dalla A alla Z",
+                nomeProgramma = "Luca Scialdone",
+                imgProgram = "ls.jpg"
+            });
+
+            program.Add(new ProgramPage
+            {
+                id = 0,
+                orario = "Responsabile Tecnico",
+                nomeProgramma = "Alessandro Conti",
+                imgProgram = "ac.jpg"
+            });
+
+            program.Add(new ProgramPage
+            {
+                id = 0,
+                orario = "Appuntamento con l'Astronomia",
+                nomeProgramma = "Carlo Rossi",
+                imgProgram = "cr.jpg"
+            });
+
+            program.Add(new ProgramPage
+            {
+                id = 0,
+                orario = "Redazione Giornalistica",
+                nomeProgramma = "Francesco Vitale",
+                imgProgram = "fv.jpg"
+            });
         }
 
     }

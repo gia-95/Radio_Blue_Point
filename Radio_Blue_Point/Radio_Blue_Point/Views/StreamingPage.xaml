@@ -25,35 +25,34 @@
                            CharacterSpacing="2"/>
                 </Frame>
             </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal" 
+            <StackLayout Orientation="Horizontal"  BackgroundColor="Transparent"
                      Margin="0,350,0,0">
-            <Frame  HeightRequest="80"
-                    WidthRequest="100"
-                    CornerRadius="0"
-                    Padding="0"
-                    BackgroundColor="Transparent">
-                    <Image Source="play.png" Margin="-50" Aspect="Fill" IsVisible="{Binding DisplayPlay}" >
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Play_tapped" />
-                        </Image.GestureRecognizers>
-                    </Image>
-            </Frame>
+                <Image Source="Button_pause_icon.png" Margin="10,0,0,0" BackgroundColor="Transparent" Aspect="Fill"  WidthRequest="80"
+                       HeightRequest="30" IsVisible="{Binding DisplayStop}" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Stop_tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="play_buttom.png" Margin="10,0,0,0" BackgroundColor="Transparent"
+                           WidthRequest="80" HeightRequest="30" Aspect="Fill" IsVisible="{Binding DisplayPlay}" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Play_tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
                 <StackLayout>
                     <Frame Padding="0" 
                        WidthRequest="50"
                        HeightRequest="35"
                        CornerRadius="1"
-                       Margin="0,0,150,0">
+                       Margin="0,0,100,0">
                         <Button Text="ON AIR" FontSize="20"  FontAttributes="Italic" TextColor="White" BackgroundColor="Red" Margin="-10" Command="{Binding PlayCommand}" />
                     </Frame>
                     <Frame Padding="0" Margin="0,0,0,0" BackgroundColor="Transparent">
-                        <Label Text="- PROGRAMMA IN ONDA-" TextColor="White" FontSize="24" Margin="0" FontAttributes="Bold"/>
+                        <Label Text="La radio che sorride!" FontFamily="{StaticResource Lobster}" TextColor="White" FontSize="25" Margin="0" FontAttributes="Bold"/>
                     </Frame>
-                    <Frame Padding="0" Margin="35,0,0,0" BackgroundColor="Transparent">
-                        <Label Text="con Mario Mario" TextColor="White" FontSize="15" Margin="-2" FontAttributes="Italic"/>
-                    </Frame>
+
                 </StackLayout>
             </StackLayout>
 
